@@ -50,7 +50,7 @@ Create WordPress plugin that draws markers on map using [Mapbox GL JS](https://d
 
 # Workflow
 1.  Use any WordPress you want, single or multisite, version 4.9+
-2.  Clone/fork this repository
+2.  Clone this repository
 3.  Run `composer install` and `bower install` in plugin folder
 4.  Push result to public repository on bitbucket/github and send us link.
 
