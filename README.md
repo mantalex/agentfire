@@ -24,29 +24,29 @@ Create WordPress plugin that draws markers on map using [Mapbox GL JS](https://d
 
 # Map page
 1. **Base Level** (*required*)
-	1. Accessible via `/map/` slug by default (slug can be changed in settings). It must be virtual page.
-	2. Page template also taken from settings
-	3. Plugin content automatically printed in main content area of the selected template
-	4. Plugin content blocks:
+	- Accessible via `/map/` slug by default (slug can be changed in settings). It must be virtual page.
+	- Page template also taken from settings
+	- Plugin content automatically printed in main content area of the selected template
+	- Plugin content blocks:
 		- Mapbox with markers
 		- Sidebar with filters
-	5. Filters has predefined list of tags, with checkbox for each tag (multiple tags can be selected)
-	6. Each tag has corresponding number next to it, with count of markers that will be filtered (in total) if current tag is selected.
-	7. When some tag is selected/unselected all numbers should be updated with recalculated data
-	8. Click on map, that opens modal with settings for new marker - name (required), tags (optional). Would be great if you use [selct2](https://select2.org/) or [chosen](https://harvesthq.github.io/chosen/) to select tags.
-	9. Click on marker that shows marker details: name and tags, date added.
-	10. Highlight another color markers added by the current WP user
+	- Filters has predefined list of tags, with checkbox for each tag (multiple tags can be selected)
+	- Each tag has corresponding number next to it, with count of markers that will be filtered (in total) if current tag is selected.
+	- When some tag is selected/unselected all numbers should be updated with recalculated data
+	- Click on map, that opens modal with settings for new marker - name (required), tags (optional). Would be great if you use [selct2](https://select2.org/) or [chosen](https://harvesthq.github.io/chosen/) to select tags.
+	- Click on marker that shows marker details: name and tags, date added.
+	- Highlight another color markers added by the current WP user
 2. **Advanced level** (*optional*)
-	1. Add search field to search by marker name (name field in add modal)
-	2. Update markers count based on current region visible on map
-	3. When tag is selected add URL path part (/map/tag-1/tag-2/.../tag-N/) for each selected tag without reloading the page
-	4. When URL part for the tag is removed (on navigation event), update all filters with the current URL path
-	5. When page is accessed directly by this URL (/map/tag-1/tag-2/.../tag-N/) it should load all filters automatically
-	6. Add filter for `My Markers` / `All Markers`
-	7. Option to edit/delete own markers for each WP user/guest visitor (without authentication form but with authorization)
-	8. Add admin settings for default map region (center coordinates & zoom), selected via interactive map
+	- Add search field to search by marker name (name field in add modal)
+	- Update markers count based on current region visible on map
+	- When tag is selected add URL path part (/map/tag-1/tag-2/.../tag-N/) for each selected tag without reloading the page
+	- When URL part for the tag is removed (on navigation event), update all filters with the current URL path
+	- When page is accessed directly by this URL (/map/tag-1/tag-2/.../tag-N/) it should load all filters automatically
+	- Add filter for `My Markers` / `All Markers`
+	- Option to edit/delete own markers for each WP user/guest visitor (without authentication form but with authorization)
+	- Add admin settings for default map region (center coordinates & zoom), selected via interactive map
 3. **Theory** (*no code required, just explanation*)
-	How you'd change/optimize the architecture of this plugin if the number of saved markers is 1M? 100M?
+	- How you'd change/optimize the architecture of this plugin if the number of saved markers is 1M? 100M?
 
 # Workflow
 1.  Use any WordPress you want, single or multisite, version 4.9+
