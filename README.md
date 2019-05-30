@@ -33,7 +33,7 @@ Create WordPress plugin that draws markers on map using [Mapbox GL JS](https://d
 	- Filters has predefined list of tags, with checkbox for each tag (multiple tags can be selected)
 	- Each tag has corresponding number next to it, with count of markers that will be filtered (in total) if current tag is selected.
 	- When some tag is selected/unselected all numbers should be updated with recalculated data
-	- Click on map, that opens modal with settings for new marker - name (required), tags (optional). Would be great if you use [selct2](https://select2.org/) or [chosen](https://harvesthq.github.io/chosen/) to select tags.
+	- Click on map, that opens modal with settings for new marker - name (required), tags (optional). Would be great if you use [select2](https://select2.org/) or [chosen](https://harvesthq.github.io/chosen/) to select tags.
 	- Click on marker that shows marker details: name and tags, date added.
 	- Highlight another color markers added by the current WP user
 2. **Advanced level** (*optional*)
