@@ -53,7 +53,7 @@ Create WordPress plugin that draws markers on map using [Mapbox GL JS](https://d
 4.  JavaScript should be IE10 compatible (which means ES5, or compiled)
 5.  Feel free to use all modern CSS features, but better use bootstrap classes.
 
-#Changes
+# Changes
 
-###June 4, 2019
+### June 4, 2019
 - Simplified task, updated task description.
