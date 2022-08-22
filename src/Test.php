@@ -6,6 +6,7 @@ namespace AgentFire\Plugin;
 
 use AgentFire\Plugin\Test\Traits\Singleton;
 use AgentFire\Plugin\Test\Rest;
+use AgentFire\Plugin\Test\Admin;
 
 /**
  * Class Test
@@ -16,5 +17,6 @@ class Test {
 
 	public function __construct() {
 		Rest::getInstance();
+		Admin::getInstance();
 	}
 }
