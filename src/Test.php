@@ -14,4 +14,7 @@ use AgentFire\Plugin\Test\Rest;
 class Test {
 	use Singleton;
 
+	public function __construct() {
+		Rest::getInstance();
+	}
 }
