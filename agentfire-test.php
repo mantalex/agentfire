@@ -5,7 +5,7 @@
  *
  * @link https://agentfire.com
  * @since 1.0.0
- * @package AgentFire\Plugin
+ * @package AgentFire\Plugin\Test
  *
  * @wordpress-plugin
  * Plugin Name: AgentFire Test
@@ -19,10 +19,9 @@
 
 namespace AgentFire\Plugin;
 
+define( 'AGENTFIRE_TEST_VERSION', '1.0.0' );
 define( 'AGENTFIRE_TEST_PATH', plugin_dir_path( __FILE__ ) );
 
 require AGENTFIRE_TEST_PATH . 'vendor/autoload.php';
 
-add_action( 'plugins_loaded', function() {
-	new Test();
-} );
+Test::getInstance();

@@ -6,7 +6,7 @@ namespace AgentFire\Plugin\Test\Traits;
 
 /**
  * Trait Singleton
- * @package AgentFire\Plugin\Test\Traits
+ * @package AgentFire\Plugin\Test
  */
 trait Singleton {
 	/**
