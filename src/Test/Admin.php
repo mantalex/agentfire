@@ -20,6 +20,7 @@ class Admin {
 	public function __construct() {
 		add_action( 'admin_menu', [ $this, 'menu' ] );
 		add_action( 'acf/init', [ $this, 'init' ] );
+		
 	}
 
 	/**
@@ -47,7 +48,7 @@ class Admin {
 		?>
 		<div class="wrap acf-settings-wrap">
 			<h1>AgentFire Test</h1>
-			<form id="post" method="post" name="post">
+			<form id="post" method="post" name="options">
 				<?php
 				acf_form_data( [
 					'post_id' => 'options',
@@ -105,17 +106,21 @@ class Admin {
 	}
 
 	public function adminLoad() {
-		if ( acf_verify_nonce( 'options' ) ) {
+		if ( $_POST ) {
+			
 			if ( acf_validate_save_post( true ) ) {
 				acf_save_post( 'options' );
 				wp_redirect( add_query_arg( [ 'message' => '1' ] ) );
-				exit;
+				
 			}
 		}
 		acf_enqueue_scripts();
 		wp_enqueue_script( 'post' );
 	}
 
+	
+	
+	
 	/**
 	 * Set settings page fields
 	 */
@@ -125,7 +130,12 @@ class Admin {
 				'key'                   => $this->key,
 				'title'                 => 'Test Settings',
 				'fields'                => [
-					// ...
+					array(
+						'key'   => 'mapbox_token',
+						'label' => 'Mapbox token',
+						'name'  => 'mapbox_token',
+						'type'  => 'text'
+					)
 				],
 				'location'              => [
 					[
