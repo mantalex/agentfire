@@ -31,7 +31,7 @@ class Markers {
 					'name'          => __('Markers', 'agentfire'),
 					'singular_name' => __('Marker', 'agentfire'),
 				),
-				'public'      => true,
+				'public'      => false,
 				'has_archive' => false,
 				//'show_in_rest'       => true,
 			)
