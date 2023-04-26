@@ -1,0 +1,21 @@
+.select2-container .select2-selection--single {
+    height: 34px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 32px;
+}
+.mapboxgl-popup-content {
+    width: 370px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+}
+.mapboxgl-popup-content button.btn.btn-primary {
+    float: right;
+    margin-bottom: -20px;
+}
+.mapboxgl-popup-content .form-check {
+    position: relative;
+    display: block;
+    padding-left: 0;
+}
