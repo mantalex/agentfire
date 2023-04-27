@@ -10,9 +10,11 @@
                             <label class="btn btn-secondary active">
                             <input type="radio" name="options" value="0" class="mark" > All Markers
                             </label>
+                            {% if is_logged %}
                             <label class="btn btn-secondary">
                             <input type="radio" name="options" value="{{ user_id }}" class="mark" > My markers
                             </label>
+                            {% endif %}
                         
                         </div>
                 </div>
